@@ -1,3 +1,4 @@
+
 "use client";
 import Image from 'next/image';
 import Charge from './assets/charge.png'
@@ -263,6 +264,7 @@ export default function Home() {
 
         </div>
       </div>
-    </div>
+      </div>
+
   );
 }
