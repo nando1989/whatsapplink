@@ -153,7 +153,7 @@ export default function Home() {
                 id="linkWhatsapp"
                 className="w-full h-auto bg-[#ffffff] flex justify-center items-center shadow-md rounded-md text-sky-600"
               >
-                {whatsAppLink || <p>O link será exibido aqui</p>}
+                {whatsAppLink || "O link será exibido aqu"}
 
                 <button
                   className="w-[2rem] h-[2rem] h-12 rounded-md ml-3 text-black"
