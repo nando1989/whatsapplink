@@ -117,7 +117,7 @@ export default function Home() {
               />
             </div>
             <label className="mb-5 text-gray-500 ml-2 "></label>
-            <div className=" border-gray-300 border-2 h-44 w-full bg-slate-50 rounded-md  flex flex-col justify-start shadow-md">
+            <div className=" border-gray-300 border-2 h-44 w-full bg-slate-50 rounded-md text-gray-500 flex flex-col justify-start shadow-md">
               <div className="w-full h-[3rem] flex justify-start items-center ml-1">
                 <button
                   className={'w-7 h-7 bg-slate-300 shadow-md rounded-sm ml-1 text-gray-500 font-bold'}
@@ -153,10 +153,10 @@ export default function Home() {
                 id="linkWhatsapp"
                 className="w-full h-auto bg-[#ffffff] flex justify-center items-center shadow-md rounded-md text-sky-600"
               >
-                {whatsAppLink || "O link será exibido aqui"}
+                {whatsAppLink || <p>O link será exibido aqui</p>}
 
                 <button
-                  className="w-[2rem] h-[2rem] h-12 rounded-md ml-3"
+                  className="w-[2rem] h-[2rem] h-12 rounded-md ml-3 text-black"
                   onClick={() => {
                     if (whatsAppLink) {
                       navigator.clipboard.writeText(whatsAppLink);
